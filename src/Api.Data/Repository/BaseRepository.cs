@@ -1,37 +1,112 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Api.Data.Context;
 using Api.Domain.Entities;
 using Api.Domain.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api.Data.Repository
 {
 
-    class BaseRepository<T> : IRepository<T> where T : Base
+    public class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
-        public Task<bool> DeleteAsync(Guid id)
+        protected readonly MyContext _context;
+        private DbSet<T> _dataset;
+        public BaseRepository(MyContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _dataset = context.Set<T>();
+        }
+        public async Task<bool> DeleteAsync(Guid id)
+        {
+            try
+            {
+                var result = await _dataset.SingleOrDefaultAsync(i => i.Id.Equals(id));
+                if (result is null) return false;
+
+                _dataset.Remove(result);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public Task<T> InsertAsync(T item)
+        public async Task<T> InsertAsync(T item)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (item.Id == Guid.Empty)
+                {
+                    item.Id = Guid.NewGuid();
+                }
+
+                item.CreateAt = DateTime.UtcNow;
+                _dataset.Add(item);
+
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return item;
         }
 
-        public Task<IEnumerable<T>> SelectAllAsync()
+        public async Task<bool> ExistAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await _dataset.AnyAsync(i => i.Id.Equals(id));
         }
 
-        public Task<T> SelectAsync(Guid id)
+        public async Task<IEnumerable<T>> SelectAllAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dataset.ToListAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        public Task<T> UpdateAsync(T item)
+        public async Task<T> SelectAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dataset.SingleOrDefaultAsync(i => i.Id.Equals(id));
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<T> UpdateAsync(T item, Guid id)
+        {
+            try
+            {
+                var result = await _dataset.SingleOrDefaultAsync(i => i.Id == id);
+                if (result is null) return null;
+
+                item.Id = result.Id;
+                item.UpdateAt = DateTime.UtcNow;
+                item.CreateAt = result.CreateAt;
+
+                _dataset.Update(item);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return item;
         }
     }
 }

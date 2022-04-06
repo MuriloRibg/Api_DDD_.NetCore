@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = application
-build_property.ProjectDir = c:\Users\murilo.ribeiro\Documents\Udemy - Murilo\API -.NetCore DDD xUnit\src\Api.Application\
+build_property.ProjectDir = C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\

@@ -9,35 +9,14 @@
       "Data/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
-          "FluentNHibernate": "1.4.0",
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
-          "NHibernate": "4.1.2.4000",
           "Pomelo.EntityFrameworkCore.MySql": "2.2.0"
         },
         "runtime": {
           "Data.dll": {}
-        }
-      },
-      "FluentNHibernate/1.4.0": {
-        "dependencies": {
-          "NHibernate": "4.1.2.4000"
-        },
-        "runtime": {
-          "lib/net35/FluentNHibernate.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
-          }
-        }
-      },
-      "Iesi.Collections/4.0.0.4000": {
-        "runtime": {
-          "lib/net40/Iesi.Collections.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.4000"
-          }
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -334,17 +313,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.2.21924"
-          }
-        }
-      },
-      "NHibernate/4.1.2.4000": {
-        "dependencies": {
-          "Iesi.Collections": "4.0.0.4000"
-        },
-        "runtime": {
-          "lib/net40/NHibernate.dll": {
-            "assemblyVersion": "4.1.0.4000",
-            "fileVersion": "4.1.2.4000"
           }
         }
       },
@@ -1111,20 +1079,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FluentNHibernate/1.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5LKDINUryDogx/GCFtB9avXJu8Dg4A/6k9I2T3Zz6P/C89MDrazhJuCnKcaiXZFqvOWeDpiFYDkZ3w6JYelQ4A==",
-      "path": "fluentnhibernate/1.4.0",
-      "hashPath": "fluentnhibernate.1.4.0.nupkg.sha512"
-    },
-    "Iesi.Collections/4.0.0.4000": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-fLQKwZovMOhjte47Op+2YWLpmncQ/siA7hOdmG2eBLTFjp81s+gGkkGnDetOhBqYnmWK8g2kyx1DP9uNaJ68Ew==",
-      "path": "iesi.collections/4.0.0.4000",
-      "hashPath": "iesi.collections.4.0.0.4000.nupkg.sha512"
-    },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -1320,13 +1274,6 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
-    },
-    "NHibernate/4.1.2.4000": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rKXEGlArFDYdrS3e/YugzzyCIy6p6ITj+YUizOsDIdgNywsen6askxF8M642uYRm+YcEkKMPYCaLTZbKy4s3rA==",
-      "path": "nhibernate/4.1.2.4000",
-      "hashPath": "nhibernate.4.1.2.4000.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/2.2.0": {
       "type": "package",

@@ -2,27 +2,6 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "FluentNHibernate/1.4.0": {
-        "type": "package",
-        "dependencies": {
-          "NHibernate": "3.3.1.4000"
-        },
-        "compile": {
-          "lib/net35/FluentNHibernate.dll": {}
-        },
-        "runtime": {
-          "lib/net35/FluentNHibernate.dll": {}
-        }
-      },
-      "Iesi.Collections/4.0.0.4000": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Iesi.Collections.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Iesi.Collections.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -396,18 +375,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "NHibernate/4.1.2.4000": {
-        "type": "package",
-        "dependencies": {
-          "Iesi.Collections": "[4.0.0, 5.0.0)"
-        },
-        "compile": {
-          "lib/net40/NHibernate.dll": {}
-        },
-        "runtime": {
-          "lib/net40/NHibernate.dll": {}
         }
       },
       "Pomelo.EntityFrameworkCore.MySql/2.2.0": {
@@ -1759,32 +1726,6 @@
     }
   },
   "libraries": {
-    "FluentNHibernate/1.4.0": {
-      "sha512": "5LKDINUryDogx/GCFtB9avXJu8Dg4A/6k9I2T3Zz6P/C89MDrazhJuCnKcaiXZFqvOWeDpiFYDkZ3w6JYelQ4A==",
-      "type": "package",
-      "path": "fluentnhibernate/1.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fluentnhibernate.1.4.0.nupkg.sha512",
-        "fluentnhibernate.nuspec",
-        "lib/net35/FluentNHibernate.XML",
-        "lib/net35/FluentNHibernate.dll"
-      ]
-    },
-    "Iesi.Collections/4.0.0.4000": {
-      "sha512": "fLQKwZovMOhjte47Op+2YWLpmncQ/siA7hOdmG2eBLTFjp81s+gGkkGnDetOhBqYnmWK8g2kyx1DP9uNaJ68Ew==",
-      "type": "package",
-      "path": "iesi.collections/4.0.0.4000",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "iesi.collections.4.0.0.4000.nupkg.sha512",
-        "iesi.collections.nuspec",
-        "lib/net40/Iesi.Collections.dll",
-        "lib/net40/Iesi.Collections.xml"
-      ]
-    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -2300,32 +2241,6 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
-      ]
-    },
-    "NHibernate/4.1.2.4000": {
-      "sha512": "rKXEGlArFDYdrS3e/YugzzyCIy6p6ITj+YUizOsDIdgNywsen6askxF8M642uYRm+YcEkKMPYCaLTZbKy4s3rA==",
-      "type": "package",
-      "path": "nhibernate/4.1.2.4000",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ConfigurationTemplates/FireBird.cfg.xml",
-        "ConfigurationTemplates/MSSQL.cfg.xml",
-        "ConfigurationTemplates/MySql.cfg.xml",
-        "ConfigurationTemplates/Oracle.cfg.xml",
-        "ConfigurationTemplates/PostgreSQL.cfg.xml",
-        "ConfigurationTemplates/SQLite.cfg.xml",
-        "ConfigurationTemplates/SybaseASE.cfg.xml",
-        "ConfigurationTemplates/SybaseSQLAnywhere.cfg.xml",
-        "NHibernate.license.txt",
-        "NHibernate.readme.html",
-        "NHibernate.releasenotes.txt",
-        "lib/net40/NHibernate.dll",
-        "lib/net40/NHibernate.xml",
-        "nhibernate-configuration.xsd",
-        "nhibernate-mapping.xsd",
-        "nhibernate.4.1.2.4000.nupkg.sha512",
-        "nhibernate.nuspec"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/2.2.0": {
@@ -6015,12 +5930,10 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Domain >= 1.0.0",
-      "FluentNHibernate >= 1.4.0",
       "Microsoft.EntityFrameworkCore.Design >= 2.2.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.6",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.6",
-      "NHibernate >= 4.1.2.4000",
       "Pomelo.EntityFrameworkCore.MySql >= 2.2.0"
     ]
   },
@@ -6031,11 +5944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Data\\Data.csproj",
+      "projectPath": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Data\\Data.csproj",
       "packagesPath": "C:\\Users\\murilo.ribeiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Data\\obj\\",
+      "outputPath": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6047,14 +5960,15 @@
         "net5.0"
       ],
       "sources": {
+        "http://nuget.autoglass.com.br/svc": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj"
+            "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }
@@ -6069,10 +5983,6 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "FluentNHibernate": {
-            "target": "Package",
-            "version": "[1.4.0, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "[2.2.6, )"
@@ -6090,10 +6000,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.2.6, )"
-          },
-          "NHibernate": {
-            "target": "Package",
-            "version": "[4.1.2.4000, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
@@ -6118,47 +6024,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "NHibernate 4.1.2.4000 depende de Iesi.Collections (>= 4.0.0 && < 5.0.0), mas Iesi.Collections 4.0.0 não foi encontrado. A melhor correspondência aproximada de Iesi.Collections 4.0.0.4000 foi resolvida.",
-      "libraryId": "Iesi.Collections",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'FluentNHibernate 1.4.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "FluentNHibernate",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Iesi.Collections 4.0.0.4000' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Iesi.Collections",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'NHibernate 4.1.2.4000' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "NHibernate",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj": {}
+    "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj": {
+    "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\murilo.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\obj\\",
+        "outputPath": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -23,6 +23,7 @@
           "net5.0"
         ],
         "sources": {
+          "http://nuget.autoglass.com.br/svc": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

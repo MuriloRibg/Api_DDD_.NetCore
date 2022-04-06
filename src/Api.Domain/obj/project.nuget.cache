@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wDL261XKscJzB1QkF1oxU+VjwhoiRq5duMh1EfKPIhdUS8B0fYLGl/Y5CWSLb04PqmO9jw3Pex5B+87I8zfItA==",
+  "dgSpecHash": "uACl0MXNPoK4Q2f2Y6jLxcvu3KX/quSA9GWX82Zixn/YhGU5f+BwtVrK5TdYjrfm+xzEZrmg+ztmnDrnPvnCLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\murilo.ribeiro\\Documents\\Udemy - Murilo\\API -.NetCore DDD xUnit\\src\\Api.Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\murilo.ribeiro\\Documents\\GitHub\\Api_DDD_.NetCore\\src\\Api.Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
