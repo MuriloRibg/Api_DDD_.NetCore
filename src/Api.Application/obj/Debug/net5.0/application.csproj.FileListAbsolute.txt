@@ -89,3 +89,7 @@ C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bi
 C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\murilo.ribeiro\Documents\GitHub\Api_DDD_.NetCore\src\Api.Application\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

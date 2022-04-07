@@ -20,9 +20,7 @@ namespace Api.Application.Controllers
         public async Task<IActionResult> GetAll()
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
             try
             {
@@ -39,9 +37,7 @@ namespace Api.Application.Controllers
         public async Task<IActionResult> Get(Guid id)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
             try
             {
@@ -57,9 +53,7 @@ namespace Api.Application.Controllers
         public async Task<IActionResult> Post([FromBody] UserEntity user)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
             try
             {
@@ -83,9 +77,7 @@ namespace Api.Application.Controllers
         public async Task<IActionResult> Put([FromBody] UserEntity user, Guid id)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest();
-            }
 
             try
             {
@@ -97,6 +89,30 @@ namespace Api.Application.Controllers
                 else
                 {
                     return Ok(result);
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            try
+            {
+                var result = await _userService.Delete(id);
+                if (result == false)
+                {
+                    return BadRequest();
+                }
+                else
+                {
+                    return Ok("Apagado com sucesso!");
                 }
             }
             catch (ArgumentException ex)

@@ -22,7 +22,7 @@ namespace Api.Data.Repository
         {
             try
             {
-                var result = await _dataset.SingleOrDefaultAsync(i => i.Id.Equals(id));
+                var result = await _dataset.SingleOrDefaultAsync(i => i.Id == id);
                 if (result is null) return false;
 
                 _dataset.Remove(result);
@@ -94,7 +94,6 @@ namespace Api.Data.Repository
                 var result = await _dataset.SingleOrDefaultAsync(i => i.Id == id);
                 if (result is null) return null;
 
-                item.Id = result.Id;
                 item.UpdateAt = DateTime.UtcNow;
                 item.CreateAt = result.CreateAt;
 
